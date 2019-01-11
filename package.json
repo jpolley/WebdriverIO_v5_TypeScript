@@ -1,0 +1,29 @@
+{
+  "name": "webdriverio_v5_typescript",
+  "version": "1.0.0",
+  "description": "Boilerplate project using version 5 WebdriverIO & TypeScript.",
+  "scripts": {
+    "test": "wdio",
+    "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'"
+  },
+  "author": "Jeremy Polley",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "@wdio/cli": "^5.3.0",
+    "@wdio/local-runner": "^5.3.0",
+    "@wdio/mocha-framework": "^5.2.8",
+    "@wdio/selenium-standalone-service": "^5.2.2",
+    "@wdio/spec-reporter": "^5.2.3",
+    "@wdio/sync": "^5.2.8",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.7.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2",
+    "webdriverio": "^5.3.0"
+  }
+}
