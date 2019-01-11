@@ -1,3 +1,5 @@
+const timeout = process.env.DEBUG ? 99999999 : 15000;
+
 exports.config = {
     //
     // ====================
@@ -7,7 +9,7 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -40,7 +42,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -50,9 +52,9 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
-        browserName: 'firefox'
+        browserName: 'chrome'
     }],
     //
     // ===================
@@ -74,7 +76,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://the-internet.herokuapp.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -107,8 +109,12 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
+      compilers: [
+        'ts-node/register',
+        'tsconfig-paths/register'
+      ],
         ui: 'bdd',
-        timeout: 60000
+        timeout: timeout
     },
     //
     // =====
@@ -149,7 +155,7 @@ exports.config = {
      */
     // beforeCommand: function (commandName, args) {
     // },
-    
+
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
@@ -186,7 +192,7 @@ exports.config = {
      */
     // afterSuite: function (suite) {
     // },
-    
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
