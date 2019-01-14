@@ -1,5 +1,6 @@
 {
     "defaultSeverity": "error",
+    "no-default-export": false,
     "extends": [
         "tslint:recommended"
     ],
