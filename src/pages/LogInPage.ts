@@ -20,6 +20,10 @@ class LoginPage extends BasePage {
 
     public open() {
         browser.url("/login");
+    loginWithCredentials(username, password) {
+        this.username.setValue(username);
+        this.password.setValue(password);
+        this.submit.click()
     }
 
 }
