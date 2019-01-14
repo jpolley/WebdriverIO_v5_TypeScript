@@ -1,25 +1,27 @@
-import BasePage from "src/pages/BasePage";
+import BasePage from 'src/pages/BasePage';
 
 class LoginPage extends BasePage {
 
     get username() {
-        return $("#username");
+        return $('#username');
     }
 
     get password() {
-        return $("#password");
+        return $('#password');
     }
 
     get submit() {
-        return $("#login > button");
+        return $('#login > button');
     }
 
     get flash() {
-        return $("#flash").getText();
+        return $('#flash').getText();
     }
 
-    public open() {
-        browser.url("/login");
+    get open() {
+        return browser.url('/login');
+    }
+
     loginWithCredentials(username, password) {
         this.username.setValue(username);
         this.password.setValue(password);
