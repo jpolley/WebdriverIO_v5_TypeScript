@@ -43,7 +43,7 @@ class LoginPage extends BasePage {
     loginWithCredentials(username, password) {
         this.username.setValue(username);
         this.password.setValue(password);
-        this.submit.click()
+        this.submit.click();
     }
 }
 
@@ -61,11 +61,14 @@ describe('Login page', () => {
     it('should allow access with correct credentials', () => {
         LoginPage.open;
         LoginPage.loginWithCredentials('tomsmith', 'SuperSecretPassword!');
+        
         expect(LoginPage.flash).to.include('You logged into a secure area!');
     });
 });
 ```
 
+## Examples
+The tests in this project use [http://the-internet.herokuapp.com](http://the-internet.herokuapp.com) to demonstrate how to interact with some of the most common UI elements you will encounter. Including: dropdowns, basic auth, dynamic loading (waitUntil), file uploads, and javascript alerts. The [official documentation](https://webdriver.io/docs/api.html) already covers most of these but it never hurts to see a practical example wired up and working. 
 
 ## Acknowledgements
 [Christian Bromann](https://github.com/christian-bromann) for his work on WebdriverIO.
