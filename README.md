@@ -1,6 +1,6 @@
 # WebdriverIO_v5_TypeScript
 
-This is a boilerplate project that uses version 5 of WebdriverIO and TypeScript. This project is useful not only as an example of WebdriverIO v5 and TypeScript playing nicely together, but it includes examples of the PageObject pattern and some practical examples of how to use WebdriverIO to build an automated test suite using mocha & chai.
+This is a boilerplate project that uses WebdriverIO v5 and TypeScript v3.2.2. This project is useful not only as an example of WebdriverIO v5 and TypeScript playing nicely together, but it includes examples of the PageObject pattern and some practical examples for using WebdriverIO to build an automated test suite with Mocha & Chai.
 
 ## Getting Started
 ```
@@ -10,9 +10,16 @@ npm install
 npm test
 ```
 
+## Why TypeScript
+TypeScript offers the benefit of types, but you won't find them in this project. I have found TypeScript to be great because of the IDE intellisense and support for the latest JavaScript features. Version 5 of WebdriverIO has a type definition file included (you should no longer @types/webdriverio). This makes autocomplete work well in your IDE: 
+
+![intellisense]()
+
+You no longer need to explicitly compile your TypeScript to JavaScript using the command `tsc`. This project uses ts-node/register and tsconfig-paths as detailed on the [WebdriverIO TypeScript setup](https://webdriver.io/docs/typescript.html) page. 
+
 ## Page Objects
 
-[Page Objects](https://martinfowler.com/bliki/PageObject.html) are a really nifty abstraction for the UI elements that you interact with in your tests. You can create simple getter functions for each element that you need to access. And optionally you can create convenience methods like `loginWithCredentials()` that allow you to create more concise tests. 
+[Page Objects](https://martinfowler.com/bliki/PageObject.html) are a really nifty abstraction for the UI elements that you interact with in your tests. You can create simple getter functions for each element that you need to access. And optionally you can create convenience methods like `loginWithCredentials()` that allow you to write more concise tests. 
 
 ##### `src/pages/LoginPage.ts`
 
@@ -67,6 +74,6 @@ describe('Login page', () => {
 
 [Kevin Lamping](https://github.com/klamping) for creating a neat [course](https://learn.webdriver.io/) on WebdriverIO that helped me learn it more quickly. 
  
-[Will Luce](https://github.com/WillLuce) created [an example project](https://github.com/WillLuce/WebdriverIO_Typescript) using version 4 of WebdriverIO & TypeScript that was helpful to me and I used it as a template for this one.
+[Will Luce](https://github.com/WillLuce) for creating an [example project](https://github.com/WillLuce/WebdriverIO_Typescript) of WebdriverIO v4 & TypeScript that was helpful to me.
 
 [Wildbit](https://wildbit.com/) for being a super rad place to work and giving me two weeks to work on whatever I wanted, which ultimately led to this project.
