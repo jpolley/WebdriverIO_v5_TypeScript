@@ -22,13 +22,13 @@ class DynamicLoadingPage extends BasePage {
     }
 
     get finishText() {
-        return this.finishElement.getText()
+        return this.finishElement.getText();
     }
 
     waitUntilElementIsDisplayed() {
         browser.waitUntil(() => {
-            return this.finishElement.isDisplayed()
-        })
+            return this.finishElement.isDisplayed();
+        });
     }
 }
 

@@ -18,5 +18,5 @@ describe('Dynamic loading', () => {
         DynamicLoadingPage.waitUntilElementIsDisplayed();
 
         expect(DynamicLoadingPage.finishText).to.eq('Hello World!');
-    })
+    });
 });

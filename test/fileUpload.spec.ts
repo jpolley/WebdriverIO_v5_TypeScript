@@ -1,6 +1,6 @@
 import {expect} from 'chai';
-import FileUploadPage from 'src/pages/FileUploadPage';
 import {imagePath} from 'src/assets';
+import FileUploadPage from 'src/pages/FileUploadPage';
 
 describe('File upload', () => {
     it('works', () => {
