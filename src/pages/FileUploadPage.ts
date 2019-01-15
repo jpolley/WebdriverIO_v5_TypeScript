@@ -21,4 +21,5 @@ class FileUploadPage extends BasePage {
         this.chooseFileElement.setValue(filePath);
     }
 }
+
 export default new FileUploadPage();

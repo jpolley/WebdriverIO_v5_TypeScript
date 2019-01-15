@@ -5,4 +5,5 @@ class BasicAuthPage extends BasePage {
         return $('#content > div > p').getText();
     }
 }
+
 export default new BasicAuthPage();

@@ -27,6 +27,6 @@ class LoginPage extends BasePage {
         this.password.setValue(password);
         this.submit.click()
     }
-
 }
+
 export default new LoginPage();

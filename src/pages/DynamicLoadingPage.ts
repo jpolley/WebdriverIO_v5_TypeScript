@@ -31,4 +31,5 @@ class DynamicLoadingPage extends BasePage {
         })
     }
 }
+
 export default new DynamicLoadingPage();

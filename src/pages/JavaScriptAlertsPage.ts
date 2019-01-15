@@ -13,4 +13,5 @@ class JavaScriptAlertsPage extends BasePage {
         return $('#result').getText();
     }
 }
+
 export default new JavaScriptAlertsPage();
