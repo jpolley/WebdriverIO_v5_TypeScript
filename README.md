@@ -70,7 +70,7 @@ describe('Login page', () => {
 ## Acknowledgements
 [Christian Bromann](https://github.com/christian-bromann) for his work on WebdriverIO.
 
-[Dave Haeffner](https://github.com/tourdedave) for his work on [the-internet](http://the-internet.herokuapp.com) which I use in my examples.
+[Dave Haeffner](https://github.com/tourdedave) for his work on [the-internet](http://the-internet.herokuapp.com) which is used in the examples.
 
 [Kevin Lamping](https://github.com/klamping) for creating a neat [course](https://learn.webdriver.io/) on WebdriverIO that helped me learn it more quickly. 
  
