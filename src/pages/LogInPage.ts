@@ -25,7 +25,7 @@ class LoginPage extends BasePage {
     loginWithCredentials(username, password) {
         this.username.setValue(username);
         this.password.setValue(password);
-        this.submit.click()
+        this.submit.click();
     }
 }
 
