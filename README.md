@@ -11,7 +11,7 @@ npm test
 ```
 
 ## Why TypeScript
-TypeScript offers the benefit of types, but you won't find them in this project. I have found TypeScript to be great because of the IDE intellisense and support for the latest JavaScript features. Version 5 of WebdriverIO has a type definition file included (you should no longer use @types/webdriverio). This makes autocomplete work well in your IDE: 
+TypeScript offers the benefit of types, but you won't find them in this project. I have found TypeScript to be great because of the IDE intellisense and support for the latest JavaScript features: 
 
 ![intellisense](https://github.com/jpolley/WebdriverIO_v5_TypeScript/blob/master/src/assets/intellisense.png)
 
