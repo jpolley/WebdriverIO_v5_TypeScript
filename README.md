@@ -74,7 +74,7 @@ The tests in this project use [http://the-internet.herokuapp.com](http://the-int
 
 [![CircleCI](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master.svg?style=svg)](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master) CircleCI was pretty easy to setup and you can check out `.circleci/config.yml` if you are curious. 
 
-[![Build Status](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript.svg?branch=travisci)](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript) Travis CI took a little more effort and I was only able to get it running in headless mode so I left those changes in another branch named `travisci` instead of merging them to master. 
+[![Build Status](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript.svg?branch=travisci)](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript) Travis CI took a little more effort and I was only able to get it running in headless mode so I left those changes in another branch named "travisci" instead of merging them to master. 
 
 ## Acknowledgements
 [Christian Bromann](https://github.com/christian-bromann) for his work on WebdriverIO.
