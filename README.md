@@ -70,9 +70,11 @@ describe('Login page', () => {
 ## Examples
 The tests in this project use [http://the-internet.herokuapp.com](http://the-internet.herokuapp.com) to demonstrate how to interact with some of the most common UI elements you will encounter. Including: dropdowns, basic auth, dynamic loading (waitUntil), file uploads, and javascript alerts. The [official documentation](https://webdriver.io/docs/api.html) already covers most of these but it never hurts to see a practical example wired up and working. 
 
-## Example CI
+## CI examples
 
-[![CircleCI](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master.svg?style=svg)](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master) `.circleci/config.yml` added as an example for running tests on CircleCI
+[![CircleCI](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master.svg?style=svg)](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master) CircleCI was pretty easy to setup and you can check out `.circleci/config.yml` if you are curious. 
+
+[![Build Status](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript.svg?branch=travisci)](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript) Travis CI took a little more effort and I was only able to get it running in headless mode so I left those changes in another branch named `travisci` instead of merging them to master. 
 
 ## Acknowledgements
 [Christian Bromann](https://github.com/christian-bromann) for his work on WebdriverIO.
