@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- "10"
+dist: trusty
+addons:
+  chrome: stable
+branches:
+  only:
+  - travisci
+before_install:
+- npm i -g npm
+install:
+- npm i
+jobs:
+  include:
+  - stage: test
+    name: run all my tests travis
+    script:
+    - npm test
