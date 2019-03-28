@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'node:10.12-browsers'
+      image 'circleci/node:10.12-browsers'
     }
 
   }
