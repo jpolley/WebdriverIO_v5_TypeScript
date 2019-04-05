@@ -72,12 +72,12 @@ The tests in this project use [http://the-internet.herokuapp.com](http://the-int
 
 ## CI examples
 
-| Service | Cost | Description  |
+| Service | Cost | Notes  |
 | --- | ---| --- |
-| CircleCI [![CircleCI](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master.svg?style=svg)](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master) | Paid | CircleCI was pretty easy to setup and you can check out `.circleci/config.yml` if you are curious. |
+| CircleCI [![CircleCI](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master.svg?style=svg)](https://circleci.com/gh/jpolley/WebdriverIO_v5_TypeScript/tree/master) | Paid | CircleCI was pretty easy to setup. Basic config is here `.circleci/config.yml` |
 | Codeship [![Codeship Status for jpolley/WebdriverIO_v5_TypeScript](https://app.codeship.com/projects/025dab80-3170-0137-1949-12f5204c6489/status?branch=master)](https://app.codeship.com/) | Paid | Codeship was also really easy to configure. |
 | TravisCI [![Build Status](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript.svg?branch=travisci)](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript) | Paid | Travis CI took a little more effort and I was only able to get it running in headless mode so I left those changes [in another branch](https://github.com/jpolley/WebdriverIO_v5_TypeScript/tree/travisci) instead of merging them to master. |
-| Jenkins | Free | While it is more work initially to setup, I've found it to be relatively painless. Using [Jenkins Blue Ocean](https://jenkins.io/doc/book/blueocean/getting-started/) is a great option. The `Jenkinsfile` uses one of the pre-built circleci browser image with most everything you need already installed. |  
+| Jenkins | Free | Using [Jenkins Blue Ocean](https://jenkins.io/doc/book/blueocean/getting-started/) is a great option. While it is more work initially to setup, I've found it to be relatively painless. The `Jenkinsfile` uses one of the pre-built circleci browser images with most everything you need already installed. |  
 
 ## Acknowledgements
 [Christian Bromann](https://github.com/christian-bromann) for his work on WebdriverIO.
