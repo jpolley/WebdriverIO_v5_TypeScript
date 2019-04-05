@@ -5,7 +5,8 @@
   "repository": "https://github.com/jpolley/WebdriverIO_v5_TypeScript",
   "scripts": {
     "test": "wdio",
-    "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'"
+    "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'",
+    "report": "allure generate ./allure-results --clean && allure open"
   },
   "author": "Jeremy Polley",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@types/node": "^10.14.4",
+    "@wdio/allure-reporter": "^5.7.8",
     "@wdio/cli": "^5.7.10",
     "@wdio/local-runner": "^5.7.9",
     "@wdio/mocha-framework": "^5.7.8",
