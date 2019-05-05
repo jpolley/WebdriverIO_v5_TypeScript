@@ -1,4 +1,4 @@
-const timeout = process.env.DEBUG ? 99999999 : 15000;
+const timeout = process.env.DEBUG ? 99999999 : 30000;
 
 exports.config = {
     //
@@ -107,7 +107,10 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec'],
+    reporters: ['spec', ['allure', {
+      outputDir: 'allure-results',
+      disableWebdriverStepsReporting: true,
+    }]],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -187,8 +190,11 @@ exports.config = {
      * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
      * @param {Object} test test details
      */
-    // afterTest: function (test) {
-    // },
+    afterTest: function (test) {
+      if (test.error !== undefined) {
+        browser.takeScreenshot();
+      }
+    },
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
