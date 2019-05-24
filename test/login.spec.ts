@@ -1,4 +1,5 @@
 import {expect} from 'chai';
+import {config} from 'src/config';
 import LoginPage from 'src/pages/LogInPage';
 
 describe('Login page', () => {
@@ -15,4 +16,11 @@ describe('Login page', () => {
 
         expect(LoginPage.flash).to.include('You logged into a secure area!');
     });
+
+    it('using config values specified in src/config', () => {
+        LoginPage.open;
+        LoginPage.loginWithCredentials(config.username, config.password);
+
+        expect(LoginPage.flash).to.include('You logged into a secure area!');
+    })
 });
