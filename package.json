@@ -4,7 +4,7 @@
   "description": "Boilerplate project using version 5 WebdriverIO & TypeScript.",
   "repository": "https://github.com/jpolley/WebdriverIO_v5_TypeScript",
   "scripts": {
-    "test": "wdio --spec ./test/react",
+    "test": "wdio",
     "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'",
     "report": "allure generate ./allure-results --clean && allure open"
   },
