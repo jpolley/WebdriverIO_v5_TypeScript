@@ -82,8 +82,10 @@ The tests in this project use [http://the-internet.herokuapp.com](http://the-int
 # Reporters
 This projects uses both the [spec-reporter](https://webdriver.io/docs/spec-reporter.html) and [allure-reporter](https://webdriver.io/docs/allure-reporter.html). The spec reporter offers great feedback when running from terminal and the allure reporter provides you with a nice report and screenshots that are automatically attached to failed tests. After running your the tests, run `npm run report` to generate the allure report. It's nifty. 
 
+Allure Overview: 
 ![allure](https://github.com/jpolley/WebdriverIO_v5_TypeScript/blob/master/src/assets/allure.png)
 
+Example of failed test with screenshot: 
 ![screenshot](https://github.com/jpolley/WebdriverIO_v5_TypeScript/blob/master/src/assets/screenshot.png)
 
 ## Acknowledgements
