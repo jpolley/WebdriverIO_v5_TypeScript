@@ -79,7 +79,7 @@ The tests in this project use [http://the-internet.herokuapp.com](http://the-int
 | TravisCI [![Build Status](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript.svg?branch=travisci)](https://travis-ci.org/jpolley/WebdriverIO_v5_TypeScript) | Paid | Travis CI took a little more effort and I was only able to get it running in headless mode so I left those changes [in another branch](https://github.com/jpolley/WebdriverIO_v5_TypeScript/tree/travisci) instead of merging them to master. |
 | Jenkins | Free | Using [Jenkins Blue Ocean](https://jenkins.io/doc/book/blueocean/getting-started/) is a great option. While it is more work initially to setup, I've found it to be relatively painless. The `Jenkinsfile` uses one of the pre-built circleci browser images with most everything you need already installed. |  
 
-# Reporters
+## Reporters
 This projects uses both the [spec-reporter](https://webdriver.io/docs/spec-reporter.html) and [allure-reporter](https://webdriver.io/docs/allure-reporter.html). The spec reporter offers great feedback when running from terminal and the allure reporter provides you with a nice report and screenshots that are automatically attached to failed tests. After running your the tests, run `npm run report` to generate the allure report. It's nifty. 
 
 Allure Overview: 
