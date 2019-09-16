@@ -6,7 +6,8 @@
   "scripts": {
     "test": "wdio",
     "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'",
-    "report": "allure generate ./allure-results --clean && allure open"
+    "report": "allure generate ./allure-results --clean && allure open",
+    "report-ci": "allure generate allure-results --clean -o allure-report"
   },
   "author": "Jeremy Polley",
   "license": "ISC",

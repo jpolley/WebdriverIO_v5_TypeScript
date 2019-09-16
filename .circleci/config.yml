@@ -33,6 +33,15 @@ jobs:
         - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
 
-    # run tests!
-    - run: yarn test
+    - run:
+        name: Run Tests
+        command: yarn test
 
+    - run:
+        name: Generate Allure Report
+        command: npm run report-ci
+        when: always
+
+    - store_artifacts:
+        name: Upload Allure Report
+        path: allure-report/
