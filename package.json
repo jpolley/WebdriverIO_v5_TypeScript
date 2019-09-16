@@ -22,6 +22,7 @@
     "@wdio/selenium-standalone-service": "^5.12.1",
     "@wdio/spec-reporter": "^5.12.1",
     "@wdio/sync": "^5.13.0",
+    "allure-commandline": "^2.13.0",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ts-node": "^7.0.1",
