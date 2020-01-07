@@ -9,14 +9,14 @@ describe('Dropdown', () => {
         expect(DropdownPage.dropdownElement.getValue()).to.eq('2');
     });
 
-    it ('can be set using selectByAttribute', () => {
+    it('can be set using selectByAttribute', () => {
         DropdownPage.open;
         DropdownPage.dropdownElement.selectByAttribute('value', '1');
 
         expect(DropdownPage.dropdownElement.getValue()).to.eq('1');
     });
 
-    it ('can be set using selectByAttribute', () => {
+    it('can be set using selectByAttribute', () => {
         DropdownPage.open;
         DropdownPage.dropdownElement.selectByIndex(2);
 
