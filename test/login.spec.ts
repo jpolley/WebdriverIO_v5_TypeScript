@@ -22,5 +22,5 @@ describe('Login page', () => {
         LoginPage.loginWithCredentials(config.username, config.password);
 
         expect(LoginPage.flash).to.include('You logged into a secure area!');
-    })
+    });
 });
