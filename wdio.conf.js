@@ -112,11 +112,12 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
+      require: 'ts-node/register',
       compilers: [
         'tsconfig-paths/register'
       ],
-        ui: 'bdd',
-        timeout: timeout
+      ui: 'bdd',
+      timeout: timeout
     },
     //
     // =====
@@ -148,9 +149,9 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    before: function (capabilities, specs) {
-      require('ts-node').register({ files: true });
-    },
+    // before: function (capabilities, specs) {
+    //   require('ts-node').register({ files: true });
+    // },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name

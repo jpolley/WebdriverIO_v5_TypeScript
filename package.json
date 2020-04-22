@@ -25,7 +25,7 @@
     "allure-commandline": "^2.13.0",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "ts-node": "^7.0.1",
+    "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.1",
     "typescript": "^3.8.3",
